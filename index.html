@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a0de352767.js" crossorigin="anonymous"></script>
+    <script src="my_jquery_functions.js"></script> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="section1">
+    <div id="form-div">
+        <h3 id="form-title">SUBMIT THE FORM</h3>
+        <form name="formOne" method="post">
+            <div class="form-group">
+                <label class="label-name">Name:</label>
+                <input id="name" type="text" name="name">
+                <span id="error_name"></span>
+            </div>
+            <div class="form-group">
+                 <label class="label-name">Surname:</label>
+                 <input type="text" id="surname" type="text" name="surname">
+                 <span id="error_surname"></span>
+            </div>
+             <div class="form-group">
+                 <label class="label-name">Date od Birth:</label>
+                 <input type="date" id="dob" type="text" name="age">
+                 <span id="error_dob"></span>
+             </div>
+             <div class="form-group"  id="gender">
+                <label class="label-name">Gender: &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                Male<input type="radio" name="gender" value="Male">
+                Female<input type="radio" name="gender" value="Female">
+                <span id="error_gender"></span>
+            </div>
+           
+            <input type="button" class="button" name="reset" id="reset" value="Reset" onclick="resetForm()">     
+            <input type="button" class="button" name="send" id="send" value="Send" onclick="validateData()">
+        </form>
+    </div>
+    
+    <div class="input-group" id="navbar-searchbar">
+        <h3>Klick the button to search:</h3>
+        <input type="text" id="search" placeholder="Search">
+        <button class="btn btn-default" onclick="showAndHide('search');"><i class="fa fa-search"></i></button>
+    </div>
+    </section>
+
+    <section id="section2">
+
+        <h2 id="title-tabs">Choose the tab to read the text:</h2>
+        <div class="tab-panels">
+            <ul class="tabs">
+                <li>Tab 1</li>
+                <li>Tab 2</li>
+                <li>Tab 3</li>
+                <li>Tab 4</li>
+                <li>Tab 5</li>
+            </ul>
+        
+            <div id="div1" class="panel"></div>
+            <div id="div2" class="panel">
+                <p>wnkrv    wrćlknv 3rćlkbn3    rćoibn3 ćrlbkn  3rćbećkmtb  ć</p>
+            </div>
+            <div id="div3" class="panel"></div>
+            <div id="div4" class="panel"></div>
+            <div id="div5" class="panel"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+body{
+    background-color: #26C281;
+    font-family: Lucida, sans-serif;
+}
+#section1{
+    display:flex;
+    margin-top: 100px;
+}
+#form-div{
+    margin: auto;
+    padding: 25px;
+    font-size: 16px;
+   
+    background-color: rgb(20, 20, 19);
+    width: 20%;
+    color: white;
+    border-radius: 20px;
+    -webkit-box-shadow: -1px 0px 46px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 0px 46px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 0px 46px 0px rgba(0,0,0,0.75);
+
+}
+
+#form-title{
+ 
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.form-group{
+    padding:10px;
+}
+
+#name, #surname, #dob{
+    height: 28px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: rgb(97, 99, 105);
+}
+
+#name{
+    margin-left: 70px;
+}
+
+#surname{
+    margin-left: 48px;
+}
+#dob{
+    margin-left: 28px;
+}
+
+.button{
+    background-color: #26C281;
+    border-style: none;
+    border-radius:10px;
+    height: 35px;
+    width: 127px;
+    margin: 10px;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#gender{
+    float:right;
+    margin-right:7px;
+}
+
+#error_name, #error_surname, #error_dob, #error_gender{
+    color: red;
+}
+
+.input-group{
+   margin:auto;
+   margin-left: -100px;
+}
+
+#search{
+    height: 38px;
+    width: 300px;
+    border-radius: 15px;
+    border-style: none;
+    display:none;
+    padding-left:10px;
+}
+
+.btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    border-style: none;
+    background-color: rgb(20, 20, 19);
+}
+
+
+i{
+    font-size: 18px;
+    color: white;
+}
+
+#section2{
+    margin-top: 100px;
+
+   
+}
+
+.tabs{
+    width: 30%;
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin: auto;   
+}
+
+#title-tabs{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+li{
+    cursor: pointer;
+    padding: 18px 22px;
+}
+
+li:hover{    
+    background-color: #ddd;
+}
+
+.panel{
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
